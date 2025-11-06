@@ -71,13 +71,13 @@ class RAGSystem:
 上下文資訊：
 {context}
 
-問題：{question}
+問題：{query}
 
 詳細回答："""
         
         prompt = PromptTemplate(
             template=template,
-            input_variables=["context", "question"]
+            input_variables=["context", "query"]
         )
         
         # 創建 RetrievalQA 鏈

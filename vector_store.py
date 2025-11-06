@@ -3,7 +3,7 @@ Vector Store Module
 向量存儲與檢索系統，支援高效相似度搜索
 """
 
-from typing import List, Optional
+from typing import List, Optional, Tuple
 from langchain_core.documents import Document
 from langchain_community.vectorstores import Chroma, FAISS
 from embedding import TextEmbedding
@@ -127,7 +127,7 @@ class VectorStore:
         self,
         query: str,
         k: int = 4
-    ) -> List[tuple[Document, float]]:
+    ) -> List[Tuple[Document, float]]:
         """
         執行相似度檢索並返回分數
         
