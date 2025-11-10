@@ -1,0 +1,40 @@
+# 環境配置文件
+.env
+
+# Python 快取文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 虛擬環境
+venv/
+env/
+ENV/
+.venv
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 測試和覆蓋率報告
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 向量資料庫存儲
+chroma_db/
+faiss_index/
+vector_store/
+
+# 臨時文件
+*.tmp
+*.log
+.DS_Store
+
+# 文件上傳目錄
+uploads/
+data/pdfs/
