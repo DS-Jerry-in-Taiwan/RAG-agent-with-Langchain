@@ -1,5 +1,5 @@
 .venv/
 .env
-dev_doc/
+doc/dev_doc/
 *.pyc
 __pycache__/
